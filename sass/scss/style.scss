@@ -1,0 +1,371 @@
+* {
+    box-sizing: inherit;
+
+    &::before {
+        box-sizing: inherit;
+    }
+
+    &::after {
+        box-sizing: inherit;
+    }
+
+    body {
+        margin: 0;
+        color: #071f32;
+        font-family: MontserratVariable, Montserrat, sans-serif;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+
+            nav {
+                font-family: MontserratVariable, Montserrat, sans-serif;
+                background: #fff;
+                box-shadow: 0 2px 0 0 rgba(7, 31, 50.1);
+                display: flex;
+                position: relative;
+                align-items: center;
+                height: 100%;
+                padding: 0;
+                justify-content: space-around;
+
+                figure {
+                    img {
+                        height: 100%;
+                        width: 100px;
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    list-style-type: none;
+                    margin: 0;
+
+                    li {
+                        a {
+                            padding: 1rem;
+                            display: inline-block;
+                            text-decoration: none;
+                            color: black;
+
+                            input {
+                                border: none;
+                                height: 1rem;
+                                width: 15rem;
+                                border: 1px solid whitesmoke;
+                                padding: 0.5rem;
+                                font-size: 1.1rem;
+
+                                &:hover {
+                                    background-color: black;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: blue;
+                }
+            }
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 26fr 55fr 24fr;
+            grid-column-gap: 3rem;
+            margin: 8rem 3rem 0 1.5rem;
+            max-width: 178rem;
+
+            .paris-button {
+                align-items: center;
+                background-color: #fff;
+                border: none;
+                cursor: pointer;
+                display: inline-flex;
+                justify-content: center;
+                min-width: 12rem;
+                padding: 1.6rem 2rem;
+                text-decoration: none;
+            }
+
+            section.services {
+                margin: 0;
+                max-width: 31rem;
+                padding: 0 2.5rem;
+
+                ul.shortcuts-buttons {
+                    display: flex;
+                    flex-flow: wrap;
+                    justify-content: center;
+                    grid-gap: 0.8rem;
+                    gap: 0.8rem;
+                    margin-bottom: 1.7rem;
+
+                    a.shortcuts-button {
+                        background: #f4f3f3;
+                        border: 0;
+                        padding: 1rem 1.4rem;
+                        color: #071f32;
+                        text-transform: uppercase;
+                        font: normal normal 700 1rem MontserratVariable, Montserrat, sans-serif;
+                        display: inline-flex;
+                        align-items: center;
+                        grid-gap: 0.75rem;
+                        gap: 0.75rem;
+                        cursor: pointer;
+                        text-decoration: none;
+
+                    }
+                }
+
+                .paris-button-text {
+                    letter-spacing: .1em;
+                    font-weight: 600;
+                }
+
+                article {
+                    display: flex;
+                    flex-flow: wrap;
+                    justify-content: center;
+                    grid-gap: 0.8rem;
+                    gap: 0.8rem;
+                    margin-bottom: 1.7rem;
+
+                    .shortcut {
+                        align-items: center;
+                        border-top: 0.2rem solid #f2f2f2;
+                        display: flex;
+                        margin: 0;
+                        padding: 1.3rem 0 1.7rem;
+                        text-decoration: none;
+
+                        a {
+                            .shortcut-link {
+                                align-items: center;
+                                border-top: 0.2rem solid #f2f2f2;
+                                display: flex;
+                                margin: 0;
+                                padding: 1.3rem 0 1.7rem;
+                                text-decoration: none;
+
+                                .shortcut-link-text {
+                                    color: #071f32;
+                                    font-size: 1.5rem;
+                                    line-height: 1.34;
+                                }
+                            }
+
+                            .shotcut-link-icon {
+                                align-items: center;
+                                background: #f2f2f2;
+                                border-radius: 50%;
+                                display: flex;
+                                flex-shrink: 0;
+                                height: 5.6rem;
+                                justify-content: center;
+                                margin-right: 1.6rem;
+                                transition: background-color .2s ease;
+                                width: 5.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            section.actualités {
+                margin: 0;
+
+                article {
+                    display: flex;
+                    flex-flow: wrap;
+                    justify-content: center;
+                    grid-gap: 0.8rem;
+                    gap: 0.8rem;
+                    margin-bottom: 1.7rem;
+
+                    ul {
+                        overflow: hidden;
+
+                        li {
+                            figure {
+                                a {
+                                    img {
+                                        transition: transform .2s;
+
+                                        &:hover {
+                                            transform: scale(1.5);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            section.telex {
+                margin: 0;
+
+                article {
+                    display: flex;
+                    flex-flow: wrap;
+                    justify-content: center;
+                    grid-gap: 0.8rem;
+                    gap: 0.8rem;
+                    margin-bottom: 1.7rem;
+                }
+            }
+        }
+
+        footer {
+            border: 1px solid;
+
+
+            .Footer_inner_left {
+                width: 70%;
+                Float: left;
+                display: flex;
+                flex-direction: column;
+                background-color: lightgray;
+
+                .footer_left_first {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin-left: 100px;
+
+                    img {
+                        height: 100%;
+                        width: 100px;
+                    }
+
+                    select {
+                        margin-left: 50px;
+                        width: 400px;
+                        height: 50px;
+                    }
+                }
+
+                .footer_left_second {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+
+                    .option {
+                        flex-direction: column;
+
+                        p {
+                            font-weight: bold;
+                        }
+
+                        span {
+                            color: red;
+                            text-transform: uppercase;
+                            font-size: small;
+
+                            &:hover {
+                                background-color: red;
+                                color: white;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .barriere {
+                        padding-right: 20px;
+                        border-right: 1px solid black;
+                    }
+                }
+
+                .footer_left_third {
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-top: 1px solid black;
+
+                    ul {
+                        display: flex;
+
+                        li {
+                            list-style-type: none;
+                            padding: 10px;
+
+                            a {
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                font-size: medium;
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .Footer_inner_right {
+                width: 30%;
+                height: 331px;
+                Float: right;
+                display: flex;
+                flex-direction: column;
+                background-color: black;
+                align-items: center;
+                color: white;
+                font-size: medium;
+
+                .footer_right_first {
+                    form {
+                        .buttonSend {
+                            background-color: red;
+                            color: white;
+
+                            &:hover {
+                                color: red;
+                                background-color: white;
+                            }
+                        }
+                    }
+                }
+
+                .footer_right_second {
+                    ul {
+                        display: flex;
+
+                        li {
+                            list-style-type: none;
+                            padding: 10px;
+
+                            a {
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                font-size: medium;
+                            }
+                        }
+                    }
+                }
+
+                span {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+/*breakpoint
+Cela dit je ne comprends pas trop, j'ai l'impression que les breakpoints font parties de bootstrap
+cependant le site doit être fait sans
+@include media-breakpoint-up(xs) {
+    header {
+        display: block;
+    }
+}
+*/
